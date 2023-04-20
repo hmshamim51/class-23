@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: 'ITC Avant Garde Gothic';
     src: url('../fonts/AvantGarde-Demi.eot');
@@ -27,26 +26,77 @@
 
 :root {
     --primary-color: #15263e;
+    --color1: #a21af0;
+    --color2: #ff0072;
+
+
+    .john-gra {
+        background-image: -moz-linear-gradient(49deg, rgb(219, 219, 219) 0%, rgb(41, 10, 89) 0%, rgb(162, 26, 240) 0%, rgb(255, 0, 114) 100%);
+        background-image: -webkit-linear-gradient(49deg, rgb(219, 219, 219) 0%, rgb(41, 10, 89) 0%, rgb(162, 26, 240) 0%, rgb(255, 0, 114) 100%);
+        background-image: -ms-linear-gradient(49deg, rgb(219, 219, 219) 0%, rgb(41, 10, 89) 0%, rgb(162, 26, 240) 0%, rgb(255, 0, 114) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 
 }
 
+/* ......................................
+.  Header Area
+......................................*/
 
 .header-area {
     background-color: var(--primary-color);
 }
 
+.primary-menu ul li a:before {
+    content: "-";
+    margin-right: 20px;
+}
+
+.primary-menu ul li:first-child a:before,
+.primary-menu ul ul li a:before {
+    display: none;
+}
+
+
+/* ......................................
+.  Banner Area
+......................................*/
+
+.john-banner-area {
+    background-image: url(../image/banner-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-content {
+    font-family: 'ITC Avant Garde Gothic';
+}
+
+.banner-content h3 {
+    margin-top: 100px;
+}
+
+.john-name {
+    background: linear-gradient(to right, var(--color1) 0%, var(--color2) 100%);
+    font-size: 150px;
+    line-height: 120px;
+}
+
+.john-subtitle {
+    font-size: 75px;
+    line-height: 60px;
+    font-weight: bold;
+    letter-spacing: 40px;
+}
+
+.banner-content p {
+    font-size: 19px;
+}
+
 .john-btn-primary {
-
-}
-
-
-/* primary menu */
-
-.primary-menu {
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.primary-menu ul li a {
-    font-weight: 700;
+    background-image: -moz-linear-gradient(49deg, rgb(219, 219, 219) 0%, rgb(41, 10, 89) 0%, rgb(162, 26, 240) 0%, rgb(255, 0, 114) 100%);
+    background-image: -webkit-linear-gradient(49deg, rgb(219, 219, 219) 0%, rgb(41, 10, 89) 0%, rgb(162, 26, 240) 0%, rgb(255, 0, 114) 100%);
+    background-image: -ms-linear-gradient(49deg, rgb(219, 219, 219) 0%, rgb(41, 10, 89) 0%, rgb(162, 26, 240) 0%, rgb(255, 0, 114) 100%);
 }
