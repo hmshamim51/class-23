@@ -9,7 +9,7 @@
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-}
+    }
 
 @font-face {
     font-family: 'ITC Avant Garde Gothic Std';
@@ -22,23 +22,44 @@
     font-weight: bold;
     font-style: normal;
     font-display: swap;
-}
+    }
+
+    @font-face {
+        font-family: 'AvantGarde-Book';
+        src: url('../fonts/AvantGarde-Book.eot');
+        src: url('../fonts/AvantGarde-Book.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/AvantGarde-Book.woff2') format('woff2'),
+            url('../fonts/AvantGarde-Book.woff') format('woff'),
+            url('../fonts/AvantGarde-Book.ttf') format('truetype'),
+            url('../fonts/AvantGarde-Book.svg#AvantGarde-Book') format('svg');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
 
 :root {
     --primary-color: #15263e;
     --color1: #a21af0;
     --color2: #ff0072;
-
-
-    .john-gra {
-        background-image: -moz-linear-gradient(49deg, rgb(219, 219, 219) 0%, rgb(41, 10, 89) 0%, rgb(162, 26, 240) 0%, rgb(255, 0, 114) 100%);
-        background-image: -webkit-linear-gradient(49deg, rgb(219, 219, 219) 0%, rgb(41, 10, 89) 0%, rgb(162, 26, 240) 0%, rgb(255, 0, 114) 100%);
-        background-image: -ms-linear-gradient(49deg, rgb(219, 219, 219) 0%, rgb(41, 10, 89) 0%, rgb(162, 26, 240) 0%, rgb(255, 0, 114) 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
     }
 
+
+h1 h2 h3 h4 h5 h6 {
+    font-family: 'ITC Avant Garde Gothic Std';
 }
+p {
+    font-family: 'AvantGarde-Book';
+    color: #494949;
+
+}
+
+.john-gra {
+    background-image: -moz-linear-gradient(49deg, rgb(219, 219, 219) 0%, rgb(41, 10, 89) 0%, rgb(162, 26, 240) 0%, rgb(255, 0, 114) 100%);
+    background-image: -webkit-linear-gradient(49deg, rgb(219, 219, 219) 0%, rgb(41, 10, 89) 0%, rgb(162, 26, 240) 0%, rgb(255, 0, 114) 100%);
+    background-image: -ms-linear-gradient(49deg, rgb(219, 219, 219) 0%, rgb(41, 10, 89) 0%, rgb(162, 26, 240) 0%, rgb(255, 0, 114) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
 
 /* ......................................
 .  Header Area
@@ -70,33 +91,35 @@
     background-position: center;
 }
 
-.banner-content {
-    font-family: 'ITC Avant Garde Gothic';
-}
-
 .banner-content h3 {
     margin-top: 100px;
 }
 
 .john-name {
-    background: linear-gradient(to right, var(--color1) 0%, var(--color2) 100%);
-    font-size: 150px;
-    line-height: 120px;
+    font-size: 145px;
+    line-height: 125px;
 }
 
 .john-subtitle {
     font-size: 75px;
     line-height: 60px;
-    font-weight: bold;
     letter-spacing: 40px;
 }
 
-.banner-content p {
-    font-size: 19px;
-}
-
-.john-btn-primary {
+.john-bg-gradient {
     background-image: -moz-linear-gradient(49deg, rgb(219, 219, 219) 0%, rgb(41, 10, 89) 0%, rgb(162, 26, 240) 0%, rgb(255, 0, 114) 100%);
     background-image: -webkit-linear-gradient(49deg, rgb(219, 219, 219) 0%, rgb(41, 10, 89) 0%, rgb(162, 26, 240) 0%, rgb(255, 0, 114) 100%);
     background-image: -ms-linear-gradient(49deg, rgb(219, 219, 219) 0%, rgb(41, 10, 89) 0%, rgb(162, 26, 240) 0%, rgb(255, 0, 114) 100%);
+}
+
+/* ......................................
+.  john about Area
+......................................*/
+
+.john-about-left h3 {
+    color: var(--color1);
+}
+
+.single-skill-progress h2 {
+    color: #4d4d4d
 }

@@ -96,9 +96,9 @@
                             <div class="banner-content text-white text-uppercase text-center my-5">
                                 <h3 class="fs-1 fw-semibold">Hello, I AM</h3>
                                 <h1 class="john-name john-gra fw-bold">John</h1>
-                                <h2 class="john-subtitle">Smith</h2>
-                                <p>I have more then 10 years of Experience</p>
-                                <button class="john-btn-primary text-white border-0 text-uppercase p-3 rounded-1 mt-4">Download CV</button>
+                                <h2 class="john-subtitle fw-bold">Smith</h2>
+                                <p class="fs-5 link-light">I have more then 10 years of Experience</p>
+                                <button class="john-btn-primary text-white border-0 text-uppercase p-3 rounded-1 mt-4 john-bg-gradient">Download CV</button>
                             </div>
                         </div>
                     </div>
@@ -113,11 +113,11 @@
         <section class="john-about-us-area">
             <div class="john-about-us">
                 <div class="container">
-                    <div class="row">
+                    <div class="row align-items-center">
                         <div class="col-xl-4">
-                            <div class="john-about-left">
-                                <h2>John Smith</h2>
-                                <h3>Web designer</h3>
+                            <div class="john-about-left text-end mt-5">
+                                <h2 class="fs-1 text-uppercase">John Smith</h2>
+                                <h3 class="fs-5 text-uppercase mb-3">Web designer</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipielit. Sunt sed ad possimus magm
                                     maiores.Ipa Lorem ipsum dolor sit amet, consectetur adiic Sunt sed ad posimus magnam
                                     maores. Ipsam as velt blanditiis debitis consequuntur mollita umenda nam obcaecati
@@ -125,32 +125,44 @@
                             </div>
                         </div>
                         <div class="col-xl-4">
-                            <div class="john-about-center">
-                                <img src="assets/image/john-photo.png" alt="">
+                            <div class="john-about-center mt-5  pt-4">
+                                <img src="assets/image/john-photo.png" class="img-fluid" alt="">
                             </div>
                         </div>
                         <div class="col-xl-4">
-                            <div class="john-about-right">
-                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
-                                    aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar" style="width: 0%"></div>
-                                </div>
-                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25"
-                                    aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar" style="width: 25%"></div>
-                                </div>
-                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50"
-                                    aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar" style="width: 50%"></div>
-                                </div>
-                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75"
-                                    aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar" style="width: 75%"></div>
-                                </div>
-                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100"
-                                    aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar" style="width: 100%"></div>
-                                </div>
+                            <div class="john-about-right mt-5 text-uppercase">
+                                <!-- single skil progress -->
+                                <div class="single-skill-progress mb-4 text-center">
+                                    <h2 class="fs-6">Design ( 80% )</h2>
+                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
+                                        aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar john-bg-gradient" style="width: 80%"></div>
+                                    </div>
+                                </div><!--/ single skil progress -->
+                                <!-- single skil progress -->
+                                <div class="single-skill-progress mb-4 text-center">
+                                    <h2 class="fs-6">Photography ( 65% )</h2>
+                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
+                                        aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar john-bg-gradient" style="width: 65%"></div>
+                                    </div>
+                                </div><!--/ single skil progress -->
+                                <!-- single skil progress -->
+                                <div class="single-skill-progress mb-4 text-center">
+                                    <h2 class="fs-6">Marketing ( 50% )</h2>
+                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
+                                        aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar john-bg-gradient" style="width: 50%"></div>
+                                    </div>
+                                </div><!--/ single skil progress -->
+                                <!-- single skil progress -->
+                                <div class="single-skill-progress mb-4 text-center">
+                                    <h2 class="fs-6">Branding ( 30% )</h2>
+                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
+                                        aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar john-bg-gradient" style="width: 30%"></div>
+                                    </div>
+                                </div><!--/ single skil progress -->
                             </div>
                         </div>
                     </div>
@@ -162,7 +174,7 @@
 
 
         <!-- john contact info area -->
-        <section class="john-contact-info-area">
+        <section class="john-contact-info-area bg-body-secondary">
             <div class="john-contact-info">
                 <div class="container">
                     <div class="row">
@@ -170,7 +182,7 @@
                             <!-- single contact -->
                             <div class="john-single-contact">
                                 <div class="john-single-contact-img">
-                                    <i class="fa-solid fa-mobile-screen-button"></i>
+                                    <i class="fa-solid fa-mobile-screen-button fs-5"></i>
                                     <div class="john-single-contact-content">
                                         <h2>Phone number</h2>
                                         <p>+1 234 456-789 <br>
@@ -183,7 +195,7 @@
                             <!-- single contact -->
                             <div class="john-single-contact">
                                 <div class="john-single-contact-img">
-                                    <i class="fa-solid fa-mobile-screen-button"></i>
+                                    <i class="fa-solid fa-location-dot"></i>
                                     <div class="john-single-contact-content">
                                         <h2>Address</h2>
                                         <p>8, Belgium, Brussels, <br>
@@ -196,7 +208,7 @@
                             <!-- single contact -->
                             <div class="john-single-contact">
                                 <div class="john-single-contact-img">
-                                    <i class="fa-solid fa-mobile-screen-button"></i>
+                                    <i class="fa-solid fa-envelope-circle-check"></i>
                                     <div class="john-single-contact-content">
                                         <h2>Email Address</h2>
                                         <p>johnsmith@company.com <br>
